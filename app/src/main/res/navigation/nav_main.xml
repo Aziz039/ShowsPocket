@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.abdulaziz.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_api"
+            app:destination="@id/fragment_api" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_db"
+            app:destination="@id/fragment_db" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_api"
+        android:name="com.example.abdulaziz.fragment_api"
+        android:label="fragment_api"
+        tools:layout="@layout/fragment_api" />
+    <fragment
+        android:id="@+id/fragment_db"
+        android:name="com.example.abdulaziz.fragment_db"
+        android:label="fragment_db"
+        tools:layout="@layout/fragment_db" />
+</navigation>
